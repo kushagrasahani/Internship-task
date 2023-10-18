@@ -12,7 +12,7 @@ const Dropdowns = () => {
   const [darkMode, setDarkMode] = useState(true);
 // variables used for setting states for components
     const handleDarkModeToggle = () => {
-    console.log(darkMode,"mode");
+    // console.log(darkMode,"mode");
         if(darkMode=== false){
           document.body.classList.remove('dark-mode');
         }
@@ -29,7 +29,8 @@ const Dropdowns = () => {
     setCitySearch(''); 
     setShowSuggestions(false); 
     const stateDropdown = document.getElementById('state');
-    stateDropdown.value = ''; // Set the selected value to empty
+    stateDropdown.value = '';
+    // Set the selected value to empty
   };
 //handling resetting of selections made
   const handleCountryChange = (event) => {
