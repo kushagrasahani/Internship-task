@@ -1,0 +1,198 @@
+body {
+    background-color: whitesmoke;
+    color: black;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+body.dark-mode {
+    background-color: black;
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 119px;
+  }
+  
+  .search-bar {
+    margin-bottom: 19px;
+  }
+  
+  .search-bar input {
+    width: 300px;
+    height: 41px;
+    border: 3px solid darkgrey;
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  .dropdowns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .dropdown {
+    margin-bottom: 22px;
+  }
+  
+  .checkbox-group {
+    display: flex;
+    margin-bottom: 14px;
+    justify-content: center;
+    margin-left: 70px;
+  }
+  
+  .checkboxes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+ 
+  .checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    background-color: lightgrey;
+    margin-bottom: 30px;
+  }
+  body.dark-mode .checkbox-wrapper {
+    background-color: white;
+}
+  .checkbox-wrapper input[type="checkbox"] {
+    width: 30px;
+    height: 30px;
+  }
+  .city-label {
+    color: black;
+  } 
+  .submit-button {
+    padding: 10px 26px;
+    font-size: 16px;
+    background-color: blueviolet;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: all .2s ease-in;
+  }
+  .submit-button:hover {
+    background-color: #819dba;
+    scale: 1.2;
+  }
+  .reset-button{
+    padding: 12px 5px;
+    font-size: 16px;
+    background-color: #2bd7e2;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: all .2s ease-in;
+    margin-left: 20px;
+  }
+  .reset-button:hover{
+    scale: 1.1;
+    margin-left: 15px;
+    background-color: rgb(5, 64, 136);
+    color: black;
+  }
+  .search-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .suggestions {
+    position: absolute;
+    border: 1px solid #ccc;
+    max-height: 150px;
+    overflow-y: auto;
+    background-color: #fff;
+    width: calc(100% - 2px);
+    box-sizing: border-box;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    z-index: 1;
+  }
+  
+  .suggestion-item {
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  .suggestion-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .selected-city {
+    margin-top: 5px;
+  }
+  /*styling the select country options menu*/
+  .selectstyle{
+    margin-left: 22px;
+    scale: 1.3;
+    background-color: aliceblue;
+  }
+ /*styling the select label for state options menu*/
+  .styleLabel{
+    margin-right: -17px;
+    font-size: 18px;
+}
+.styleSelectNew{
+    scale: 1.3;
+    margin-left: 52px;
+}
+
+  /* dark mode styling of switcher */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-right: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+.slider.round {
+    border-radius: 34px;
+    } 
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+  
+  
+  
+  
+
